@@ -1,7 +1,7 @@
 {
   "name": "the-tic-tac-toe",
   "version": "0.1.0",
-  "homepage": "https://github.com/yardnight/the-tic-tac-toe",
+  "homepage": "https://yardnight.github.io/the-tic-tac-toe",
   
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
