@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/yardnight/the-tic-tac-toe/static/css/main.0d381a4b.css",
-    "main.js": "/yardnight/the-tic-tac-toe/static/js/main.c376af46.js",
-    "static/media/logo.svg": "/yardnight/the-tic-tac-toe/static/media/logo.c27ee736851426b252346c74f5e05a93.svg",
-    "index.html": "/yardnight/the-tic-tac-toe/index.html",
-    "main.0d381a4b.css.map": "/yardnight/the-tic-tac-toe/static/css/main.0d381a4b.css.map",
-    "main.c376af46.js.map": "/yardnight/the-tic-tac-toe/static/js/main.c376af46.js.map"
+    "main.css": "/the-tic-tac-toe/static/css/main.0d381a4b.css",
+    "main.js": "/the-tic-tac-toe/static/js/main.feca8b33.js",
+    "static/media/logo.svg": "/the-tic-tac-toe/static/media/logo.c27ee736851426b252346c74f5e05a93.svg",
+    "index.html": "/the-tic-tac-toe/index.html",
+    "main.0d381a4b.css.map": "/the-tic-tac-toe/static/css/main.0d381a4b.css.map",
+    "main.feca8b33.js.map": "/the-tic-tac-toe/static/js/main.feca8b33.js.map"
   },
   "entrypoints": [
     "static/css/main.0d381a4b.css",
-    "static/js/main.c376af46.js"
+    "static/js/main.feca8b33.js"
   ]
 }
