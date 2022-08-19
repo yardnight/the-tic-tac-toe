@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/yardnight/the-tic-tac-toe/static/css/main.976d3dcf.css",
+    "main.js": "/yardnight/the-tic-tac-toe/static/js/main.f652ad48.js",
+    "static/media/logo.svg": "/yardnight/the-tic-tac-toe/static/media/logo.c27ee736851426b252346c74f5e05a93.svg",
+    "index.html": "/yardnight/the-tic-tac-toe/index.html",
+    "main.976d3dcf.css.map": "/yardnight/the-tic-tac-toe/static/css/main.976d3dcf.css.map",
+    "main.f652ad48.js.map": "/yardnight/the-tic-tac-toe/static/js/main.f652ad48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.976d3dcf.css",
+    "static/js/main.f652ad48.js"
+  ]
+}
