@@ -30,10 +30,20 @@ li{
   
   
 }
+.logo{
+  position:absolute;
+  width: 80vw;
+  transform: translate(50%, 10%);
+  top: 50vh;
+  right:50vw;
+  z-index: -1;
+  fill:#ffffff54;
+
+}
 .options{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: start;
+  justify-content:start;
   position: relative;
 }
 .reverse{
@@ -65,7 +75,7 @@ li{
   box-shadow: 1px 1px 5px #037562,
   inset -1px -1px 1px #037562;
   background: #fff;
-  margin: 1rem 0 0 0;
+  /* margin: 1rem 0 0 0; */
   cursor: pointer;
   
 }
@@ -110,7 +120,6 @@ li{
   font-size: 3rem;
   font-weight: bold;
   line-height: 34px;
-  
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
@@ -121,7 +130,7 @@ li{
 
 .active{
   background-color: #00a790;
-  color: white;
+  color: white !important;
 }
 .bold{
   font-weight: 900;
@@ -140,6 +149,8 @@ li{
   flex-direction: column;
   gap:1rem;
   align-items: center;
+  justify-content: space-between;
+  min-height: 95vh;
 }
 
 .gameInfo {
@@ -154,6 +165,47 @@ li{
   width: 320px;
   height: 320px;
 }
+
+.game-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .status{
   font-size: 2rem;
+}
+@media screen and (min-width: 767.99px) {
+  .gameBoard {
+    width: 500px;
+    height: 500px;
+  }
+  .logo{
+    
+    width: 65vw;
+    transform: translate(50%,0%);
+    top: 50vh;
+    right:50vw;
+  }
+  .square{
+    width: 33.33%;
+    height: 165px;
+    font-size: 5rem;
+
+  }
+  .game-container{
+    
+    gap: 2rem;
+  }
+  
+  .history{
+    font-size: 2rem;
+  }
+
+  .mybutton{
+    font-size: 1.5rem;
+  }
+  .reverse{
+    font-size: 1.5rem;
+  }
 }

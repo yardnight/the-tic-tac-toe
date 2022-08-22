@@ -12,11 +12,21 @@
     padding: 1.5rem;
     background: #fff;
     border-radius: 1rem;
-    min-width: calc(320px * 0.85);
+    min-width: calc(320px * 0.9);
 }
 
 .myModal.active{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 767.99px){
+    .myModalContent{
+        padding: 1.5rem;
+        background: #fff;
+        border-radius: 1rem;
+        width: calc(100vw * 0.70);
+        max-width: 600px;
+    }
 }

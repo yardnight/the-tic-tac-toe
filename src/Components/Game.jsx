@@ -2,8 +2,8 @@ import React from "react";
 import Board from "./Board";
 import History from "./History";
 import MyModal from "./UI/MyModal/MyModal";
-import SvgLogo from "../assets/logo.svg";
-
+import { ReactComponent as SvgLogo } from "../assets/logo.svg";
+import { ReactComponent as SvgLisence } from "../assets/lisence.svg";
 class Game extends React.Component {
 	constructor(props) {
 		super(props);
@@ -150,42 +150,48 @@ class Game extends React.Component {
 		// const [modal, setModal] = useState(false);
 		return (
 			<div className="game">
-				<div className="gameBoard">
-					<Board
-						isWinner={result}
-						winner={winner}
-						squares={current.squares}
-						onClick={(i) => this.handleClick(i)}
-					/>
+				<div className="game-container">
+					<div className="gameBoard">
+						<Board
+							isWinner={result}
+							winner={winner}
+							squares={current.squares}
+							onClick={(i) => this.handleClick(i)}
+						/>
+					</div>
+					<div className="gameInfo">
+						<div className="status">{status}</div>
+						<button
+							className="history"
+							onClick={() => this.showModal()}
+						>
+							Game History
+						</button>
+
+						<SvgLogo className="logo" />
+					</div>
 				</div>
-				<div className="gameInfo">
-					<div className="status">{status}</div>
-					<button
-						className="history"
-						onClick={() => this.showModal()}
-					>
-						Game History
-					</button>
-					<div className="title">the Tic-Tac-Toe</div>
-					<img src={SvgLogo} alt="logo" width="320" />
-					<MyModal
-						visible={this.state.modal}
-						setVisible={() => this.showModal()}
-					>
-						<div className="options">
-							<button
-								className="reverse"
-								onClick={() => this.reverse()}
-							>
-								Reverse
-							</button>
-							<History
-								list={orderedMoves}
-								showModal={this.showModal}
-							/>
-						</div>
-					</MyModal>
+				<div>
+					<SvgLisence width="320px" />
 				</div>
+
+				<MyModal
+					visible={this.state.modal}
+					setVisible={() => this.showModal()}
+				>
+					<div className="options">
+						<button
+							className="reverse"
+							onClick={() => this.reverse()}
+						>
+							Reverse
+						</button>
+						<History
+							list={orderedMoves}
+							showModal={this.showModal}
+						/>
+					</div>
+				</MyModal>
 			</div>
 		);
 	}
