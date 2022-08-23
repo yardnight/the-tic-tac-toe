@@ -3,7 +3,7 @@ import Board from "./Board";
 import History from "./History";
 import MyModal from "./UI/MyModal/MyModal";
 import { ReactComponent as SvgLogo } from "../assets/logo.svg";
-import { ReactComponent as SvgLisence } from "../assets/lisence.svg";
+import { ReactComponent as SvgLicense } from "../assets/license.svg";
 class Game extends React.Component {
 	constructor(props) {
 		super(props);
@@ -143,7 +143,7 @@ class Game extends React.Component {
 		if (result) {
 			status = "Winner: " + winner.winnerName;
 		} else if (!result && this.state.stepNumber === 9) {
-			status = "Draw! Come again!";
+			status = "Draw! Let's again!";
 		} else {
 			status = "Next player: " + (this.state.isExNext ? "X" : "O");
 		}
@@ -172,7 +172,7 @@ class Game extends React.Component {
 					</div>
 				</div>
 				<div>
-					<SvgLisence width="320px" />
+					<SvgLicense className="license" />
 				</div>
 
 				<MyModal
