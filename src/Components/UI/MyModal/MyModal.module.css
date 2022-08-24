@@ -9,10 +9,10 @@
 }
 
 .myModalContent{
-    padding: 1.5rem;
+    padding: 1.1rem;
     background: #fff;
     border-radius: 1rem;
-    min-width: calc(320px * 0.9);
+    width: 95vw;
 }
 
 .myModal.active{
@@ -21,12 +21,25 @@
     align-items: center;
 }
 
+@media screen and (min-width: 374.99px){
+    .myModalContent{
+        width: 85vw;
+        padding: 1.5rem;
+    }
+}
+@media screen and (min-width: 567.99px) and (orientation: landscape){
+    .myModalContent{
+        width: 85vw;
+        max-width: 400px;
+    }
+}
 @media screen and (min-width: 767.99px){
     .myModalContent{
-        padding: 1.5rem;
-        background: #fff;
-        border-radius: 1rem;
-        width: calc(100vw * 0.70);
-        max-width: 600px;
+        width: 70vw;
+    }
+}
+@media screen and (min-width: 1023.99px){
+    .myModalContent{
+        max-width: 500px;
     }
 }
